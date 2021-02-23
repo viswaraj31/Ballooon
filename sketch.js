@@ -1,8 +1,9 @@
 var database,position;
-var b,b1
+var b,b1,backgroundImage;
 
 function preload(){
-  b1 = loadImage("b1.png")
+  b1 = loadImage("b1.png");
+  backgroundImage=loadImage("bg.jpeg")
 }
 
 function setup() {
@@ -22,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-  background(255,255,255); 
+  background(backgroundImage); 
   
   if(position != undefined){
 
